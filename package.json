@@ -1,0 +1,42 @@
+{
+  "name": "@ishiduca/snoopy-bind-route",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./bind.js",
+  "scripts": {
+    "budo": "budo example:bundle.js -d example --live -- -d",
+    "style:lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "standard": {
+    "ignore": [
+      "t"
+    ]
+  },
+  "browserify": {
+    "transform": [
+      "es2040"
+    ]
+  },
+  "keywords": [],
+  "author": "ishiduca@gmail.com",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@ishiduca/snoopy": "0.0.2",
+    "@ishiduca/snoopy-multi": "0.0.3",
+    "browserify": "^16.2.3",
+    "budo": "^11.6.2",
+    "es2040": "^1.2.6",
+    "standard": "^12.0.1",
+    "tape": "^4.10.2",
+    "yo-yo": "^1.4.1"
+  },
+  "dependencies": {
+    "@ishiduca/routing": "0.0.2",
+    "global": "^4.3.2",
+    "jsonist": "^2.1.0",
+    "mississippi": "^4.0.0",
+    "nanohref": "^3.1.0",
+    "xtend": "^4.0.1"
+  }
+}

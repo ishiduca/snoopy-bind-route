@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "uri": "/users/1.json"
+  },
+  {
+    "id": 2,
+    "uri": "/users/2.json"
+  }
+]
