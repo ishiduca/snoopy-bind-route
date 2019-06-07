@@ -15,7 +15,7 @@ npm i --save @ishiduca/snoopy-bind-route
 ```js
 { init, update, run, view } = bindRoute(
   { init, update, run, routes },
-  { default, notFound, xhr }
+  { default, notFound, xhrs }
 )
 ```
 
@@ -156,20 +156,20 @@ function scheduleDeleteError (msec) {
   + `value` - `renderingFunction`
     - args - [ `node or urlObject`, `params`, `model`, `actions up function` ]
 
-#### opt has "default", "notFound", "xhr" properties
+#### opt has "default", "notFound", "xhrs" properties
 
 * `default` - default pathname.
 * `notFound` - view function for url not found.
-* `xhr` - an object literal that describes the processing of xhr when document.location changes.
+* `xhrs` - an object literal that describes the processing of xhr when document.location changes.
 
 ```
-// xhr object
+// xhrs object
 { routePattern: [
   function to create xhr request uri when document.location changes,
   function to create action creator for sending received xhr response (json) to update function ]
 }
 
-var xhr = {
+var xhrs = {
   '/(products)': [
     () => { return '/products.json' },
     (json) => { return { type: 'setProducts', value: json } }
