@@ -28,7 +28,7 @@ var jsonist = require('jsonist')
 var { pipe, through } = require('mississippi')
 var { start } = require('@ishiduca/snoopy')
 var multi = require('@ishiduca/snoopy-multi')
-var bindRoute = require(@ishiduca/snoopy-bind-route')
+var bindRoute = require('@ishiduca/snoopy-bind-route')
 
 var org = {
   init () {
